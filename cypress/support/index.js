@@ -1,3 +1,4 @@
-import 'babel-polyfill'
-import 'cypress-testing-library/add-commands'
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+import '@testing-library/cypress'
 import './commands'

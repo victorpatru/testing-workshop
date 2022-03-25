@@ -1,3 +1,4 @@
+/* eslint-disable prefer-object-spread */
 const omit = require('lodash.omit')
 const faker = require('faker')
 const {getSaltAndHash, getUserToken} = require('./auth')

@@ -74,8 +74,8 @@ you're working with.
 ## System Requirements
 
 - [git][git] v2.14.1 or greater
-- [NodeJS][node] v8.9.4 or greater
-- [npm][npm] v5.6.0 or greater
+- [NodeJS][node] v16.13.1 or greater
+- [npm][npm] v8.3.0 or greater
 
 All of these must be available in your `PATH`. To verify things are set up
 properly, you can run this:

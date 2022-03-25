@@ -4,6 +4,7 @@
 // actually can run synchronously.
 import * as generate from 'til-shared/generate'
 import db from '../src/utils/db'
+import '@babel/polyfill'
 
 async function initDb({
   users = Array.from({length: 10}, () =>
