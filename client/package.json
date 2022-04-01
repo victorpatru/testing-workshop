@@ -25,11 +25,12 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      "@babel/preset-react"
     ]
   },
   "devDependencies": {
-    "jest-dom": "1.0.0",
+    "jest-environment-jsdom": "^27.5.1",
     "jest-glamor-react": "4.2.0",
     "react-scripts": "1.1.4",
     "react-testing-library": "2.1.1",

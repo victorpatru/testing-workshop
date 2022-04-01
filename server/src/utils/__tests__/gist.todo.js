@@ -1,4 +1,5 @@
 // import {createGist} from '../gist'
+import 'regenerator-runtime/runtime';
 
 test('makes a request to the github API with the given data', async () => {
   // const data = {

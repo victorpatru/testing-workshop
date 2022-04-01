@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import * as api from '../utils/api'
 import Form from '../components/form'
 import {Input, TextArea} from '../components/inputs'
+import "regenerator-runtime/runtime";
 
 class Editor extends Component {
   static defaultProps = {

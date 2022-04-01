@@ -1,3 +1,5 @@
+import "regenerator-runtime/runtime";
+
 // Hi! This is for the instructor :)
 // add a beforeEach for cleaning up state and intitializing the API
 
@@ -25,3 +27,4 @@ test('register a new user', async () => {
   // assert the username display is the fake user's username
   // assert the logout button exists
 })
+

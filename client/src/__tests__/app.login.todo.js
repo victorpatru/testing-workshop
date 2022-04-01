@@ -1,3 +1,4 @@
+import "regenerator-runtime/runtime";
 // add a beforeEach for cleaning up state and intitializing the API
 
 test('login as an existing user', async () => {

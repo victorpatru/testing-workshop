@@ -1,5 +1,6 @@
 // ./client/jest.config.js
 module.exports = {
+  testEnvironment: "jsdom",
   displayName: 'client',
   testEnvironmentOptions: {
     url: 'https://til.test.com',

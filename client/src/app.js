@@ -8,6 +8,7 @@ import Home from './screens/home'
 import Editor from './screens/editor'
 import githubLogo from './assets/github.svg'
 import twitterLogo from './assets/twitter.svg'
+import "regenerator-runtime/runtime";
 
 const Header = glamorous.div({
   display: 'flex',

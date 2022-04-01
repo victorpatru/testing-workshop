@@ -1,5 +1,6 @@
 import React from 'react'
 import * as api from '../utils/api'
+import "regenerator-runtime/runtime";
 
 class User extends React.Component {
   initialState = {user: null, error: null, pending: false}

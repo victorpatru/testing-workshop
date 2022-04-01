@@ -1,5 +1,7 @@
 import axiosMock from 'axios'
 import {createGist} from '../gist'
+import 'regenerator-runtime/runtime';
+
 
 // during instruction, create a simple inline axios mock first
 

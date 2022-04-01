@@ -1,5 +1,6 @@
 import axiosMock from 'axios'
 import {createJSON} from '../myjson'
+import 'regenerator-runtime/runtime';
 
 beforeEach(() => {
   axiosMock.post.mockClear()
