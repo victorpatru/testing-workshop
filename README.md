@@ -1,27 +1,10 @@
-# Testing Workshop
+# [Testing Practices and Principles](https://frontendmasters.com/courses/testing-practices-principles/) Workshop
 
 👋 hi there! My name is [Kent C. Dodds](https://kentcdodds.com)! This is a
 workshop repo to teach you about testing JavaScript applications.
 
-> **NOTICE**: If you're coming here from
-> [my Frontend Masters 2017 workshop](https://frontendmasters.com/courses/testing-javascript/),
-> I recommend you watch [the updated 2018 workshop instead](https://frontendmasters.com/courses/testing-react/).
-> If you'd rather follow the 2017 workshop, then please
-> [go to the `fem` branch](https://github.com/kentcdodds/testing-workshop/tree/fem)
-> to make sure you're looking at the accurate information for your workshop.
+> **NOTICE**: This is the forked repo maintained by the Frontend Masters team to support the [Testing Practices and Principles](https://frontendmasters.com/courses/testing-practices-principles/) course by Kend C Dodds. Please file any issues in this repo or email us: support@frontendmasters.com
 
-[![chat-badge][chat-badge]][chat]
-[![Build Status][build-badge]][build]
-[![AppVeyor Build Status][win-build-badge]][win-build]
-[![Code Coverage][coverage-badge]][coverage]
-[![License][license-badge]](#license)
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
-
-[![PRs Welcome][prs-badge]][prs]
-[![Code of Conduct][coc-badge]][coc]
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
 
 ## Table of Contents
 
