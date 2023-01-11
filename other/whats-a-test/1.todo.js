@@ -19,5 +19,19 @@ error if the subtract function were to have a bug
 */
 
 // sum is intentionally broken so you can see errors in the tests
-const sum = (a, b) => a - b
+const sum = (a, b) => a + b
 const subtract = (a, b) => a - b
+
+function testingFunctions(a, aStar, b, bStar) {
+  if (a !== aStar && b !== bStar) {
+    return 'Your tests did not pass'
+  } else if (a !== aStar) {
+    return 'Your first test did not pass'
+  } else if (b !== bStar) {
+    return 'Your second test did not pass'
+  } else {
+    return 'Your tests passed'
+  }
+}
+
+console.log(testingFunctions(sum(2, 1), 3, subtract(2, 1), 1))
