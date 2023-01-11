@@ -1,27 +1,45 @@
-test('isPasswordAllowed only allows some passwords', () => {
-  // here's where I'll demo things for you :)
+/* eslint-disable jest/prefer-todo */
+import {isPasswordAllowed, userToJSON} from '../auth'
+
+describe('isPasswordAllowed only allows some passwords', () => {
+  // expect(isPasswordAllowed('')).toBe(false)
+  // expect(isPasswordAllowed('00000000000')).toBe(false)
+  // expect(isPasswordAllowed('FFFFFFFFFFF')).toBe(false)
+  // expect(isPasswordAllowed('Victor12345')).toBe(true)
+  // refactoring
+
+  const passwordsAllowed = ['Victor12345']
+  const passwordsNotAllowed = ['', '00000000000', 'FFFFFFFFFFF']
+
+  passwordsAllowed.forEach((pwd) => {
+    it(`"${pwd}" should be allowed`, () => {
+      expect(isPasswordAllowed(pwd)).toBe(true)
+    })
+  })
+
+  passwordsNotAllowed.forEach((pwd) => {
+    it(`"${pwd}" should not be allowed`, () => {
+      expect(isPasswordAllowed(pwd)).toBe(false)
+    })
+  })
 })
 
 test('userToJSON excludes secure properties', () => {
-  // Here you'll need to create a test user object
-  // pass that to the userToJSON function
-  // and then assert that the test user object
-  // doesn't have any of the properties it's not
-  // supposed to.
-  // Here's an example of a user object:
-  // const user = {
-  //   id: 'some-id',
-  //   username: 'sarah',
-  //   // ↑ above are properties which should
-  //   // be present in the returned object
-  //
-  //   // ↓ below are properties which shouldn't
-  //   // be present in the returned object
-  //   exp: new Date(),
-  //   iat: new Date(),
-  //   hash: 'some really long string',
-  //   salt: 'some shorter string',
-  // }
+  // Pull apart our safe user information which helps increase the maintainability of the test
+  const safeUser = {
+    id: 'some-id',
+    username: 'sarah',
+  }
+  const user = {
+    // Spread it into the user together with the unsafe properties eg. exp, iat, hash
+    ...safeUser,
+    exp: new Date(),
+    iat: new Date(),
+    hash: 'some really long string',
+    salt: 'some shorter string',
+  }
+
+  expect(userToJSON(user)).toEqual(safeUser)
 })
 
 //////// Elaboration & Feedback /////////
